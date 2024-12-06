@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block nth %}
+<style media="screen">
+p{
+  margin-top:30px;
+  margin-left:10px;
+  font-weight:bold;
+}
+
+</style>
+<div class="container-fluid mb-5">
+  <div class="row">
+    <div class="col-md-3 mt-5">
+      <img src="https://lh6.googleusercontent.com/proxy/-TrFJVpj6DndvFpTRUFTGruCVMj6KbKL7lRrcBTcbgSvCvlfyjla_3Y2dQHgsPa6y4r4RX5gaJIeb8S8ofSImGz6SC5gTU1RJUQxpgaXvgtQdow"
+      alt=""class="rounded ml-5"height="350px" width="250px" >
+      <h4 class='text-success text-center'>Mr.Narayana</h4>
+      <h5 class='text-center'>(<mark class='bg-white text-primary'>Founder & CEO</mark>)</h5>
+    </div>
+    <div class="col-md-9 mt-2">
+          <p>Mr. Narayana is a seasoned developer and corporate trainer, bringing over 13 years of experience in the tech industry.
+            Throughout his career, he has mastered various technologies, with particular expertise in Python, Java, and Data Analytics.
+            His skill set is both broad and deep, allowing him to adapt to and excel in the constantly evolving landscape of technology</p>
+            <button onclick="myFunction()">Click here for more info</button>
+            <div id="myDIV">
+              <script>
+          function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          </script>
+          <p>Beyond his development work, Mr. Narayana is passionate about sharing his knowledge with others. He has provided training to numerous leading tech companies and financial institutions, helping them stay competitive and innovative in a digital world.
+         His training sessions are known for being hands-on and practical, with a strong emphasis on real-world applications. He breaks down complex concepts, making them accessible to learners of all levels, from beginners to advanced professionals.</p>
+         <p>Mr. Narayana is not just a trainer; he is also a thought leader. He has participated in numerous tech talks, discussions, and seminars, where he has shared insights on the latest trends in technology.
+         His contributions are valued by peers and industry leaders alike, as he brings a wealth of practical experience and a deep understanding of current and emerging technologies.</p>
+         </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10">
+      <p class='mt-5'>The Narayana Tech House (NTH) logo is a modern and sleek design that represents innovation and expertise in technology.
+         The logo features the initials "NTH" in a bold and stylish font, symbolizing strength and professionalism. The use of clean lines and vibrant colors reflects the company's commitment to staying ahead in the tech industry.
+          Overall, the logo embodies the core values of Narayana Tech House, which are quality, knowledge, and a forward-thinking approach to technology solutions.</p>
+    </div>
+    <div class="col-md-2 text-center">
+      <img src="https://yt3.googleusercontent.com/ytc/AIdro_mhQo6cSeG_v_-PXn_qCvYMUthmdXgW4QsbATYNlrdGQg=s900-c-k-c0x00ffffff-no-rj"
+      alt="" height='200px'width='150px'class='mr-5'>
+    </div>
+  </div>
+  <h1 class="text-center">Our Team</h1>
+  <div class="row mt-3 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="{% static 'images/Siva.JPG' %}" width='230px' height='300px' alt="image-1">
+          <h4 class='text-center text-danger'>Mr. Arjun Varma</h4>
+          <h5>Team Head</h5>
+          <h6 class='text-muted'>B-Tech(<mark class='text-warning bg-white'>Mechanical</mark>)</h6>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="{% static 'images/Anusha.jpg' %}"width='230px' height='300px' alt="image-2">
+          <h4 class='text-center text-danger'>Ms.Anusha Varma</h4>
+          <h5 class=''>Testing</h5>
+          <h6 class='text-muted'>Degree(<mark class='text-warning bg-white'>BSC</mark>)</h6>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="{% static 'images/Preethi.jpg' %}"width='230px' height='300px' alt="image-3">
+          <h4 class='text-center text-danger'>Ms. Preethi Reddy</h4>
+          <h5>web Developer</h5>
+          <h6 class='text-muted'>Degree(<mark class='text-warning bg-white'>MSC</mark>)</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="text-center">Our Achievement</h1>
+  <div class="row mt-3">
+    <div class="col-md-3 text-center">
+      <img src="{% static 'images/aimg1.jpg'%}"width='200px' height='300px'alt="img-1">
+      <h4 class='text-warning'>Ms.Maneesha</h4>
+      <h4 class='text-danger'>4.5 LPA</h4>
+      <h5>(<mark class='bg-white text-info'>Traid Techno Service</mark>)</h5>
+    </div>
+    <div class="col-md-3 text-center">
+      <img src="{% static 'images/aimg2.jpg' %}" width='200px' height='300px'alt="img-2">
+      <h4 class='text-warning'>Mrs.Mayuri Padol</h4>
+      <h4 class='text-danger'>4.0 LPA</h4>
+      <h5>(<mark class='bg-white text-info'>Traid Techno Service</mark>)</h5>
+    </div>
+    <div class="col-md-3 text-center">
+      <img src="{% static 'images/aimg3.jpg' %}" width='200px' height='300px'alt="img-3">
+      <h4 class='text-warning'>Mr.Divya Swarup</h4>
+      <h4 class='text-danger'>3.6 LPA</h4>
+      <h5>(<mark class='bg-white text-info'>Traid Techno Service</mark>)</h5>
+    </div>
+    <div class="col-md-3 text-center">
+      <img src="{% static 'images/aimg4.jpg' %}"width='200px' height='300px' alt="img-4">
+      <h4 class='text-warning'>Mrs.Ramya Mounika</h4>
+      <h4 class='text-danger'>3.5 LPA</h4>
+      <h5>(<mark class='bg-white text-info'>Traid Techno Service</mark>)</h5>
+    </div>
+  </div>
+</div>
+{% endblock %}

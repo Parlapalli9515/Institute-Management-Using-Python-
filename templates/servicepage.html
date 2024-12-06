@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block nth %}
+<div class="container-fluid">
+  <table class='table table-bordered table-hover bg-light'>
+    <thead class='text-center text-capitalize bg-primary text-white'>
+      <tr>
+        <th>Course no</th>
+        <th>Course name</th>
+        <th>Course fees</th>
+        <th>Duration</th>
+        <th>Start Date</th>
+        <th>Start Time</th>
+        <th>Trainer name</th>
+        <th>Experience</th>
+      </tr>
+    </thead>
+    <tbody class='text-center'>
+      {% for i in ab %}
+      <tr>
+        <td>{{ i.course_no }}</td>
+        <td>{{ i.course_name }}</td>
+        <td>{{i.course_fee }}</td>
+        <td>{{ i.duration }}</td>
+        <td>{{ i.start_date }}</td>
+        <td>{{ i.start_time }}</td>
+        <td>{{ i.trainer_name }}</td>
+        <td>{{ i.experience }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <div class="container-fluid mt-2 text-center">
+    <h2 class='mt-5'>Training Mode</h2>
+    <h4 class='text-danger mt-2'>Online classes VS Offline classes</h4>
+    <img src="{% static 'images/online.jpg'%}" height='500px'width='1250px'alt="img-1" class='mt-3'>
+  </div>
+  <div class="mt-3">
+
+  </div>
+</div>
+{% endblock %}

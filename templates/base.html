@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    <title></title>
+  </head>
+  <style>
+    .b{
+      background: #d8ebe7;
+    }
+    h1{
+      border: 5px solid;
+      padding-bottom:10px;
+      margin: 10px 200px 10px 200px;
+      box-shadow: 5px 5px;
+      margin: 5%;
+      font-weight: bold;
+      color: #000000;
+    }
+    .a{
+       color:#630778;
+     }
+     .sm{
+       font-size:23.5px;
+       background-color:#d8ebe7;
+
+     }
+
+    </style>
+  <body>
+<div class="text-left mt-2">
+    <a id="top"></a>
+    <a href="#bottom" class="btn btn-success mb-2">Go to bottom</a>
+</div>
+    <nav class='navbar navbar-expand-md bg-primary smoothScroll'role="navigation">
+      <ul class='navbar-nav'>
+        <li class='nav-item'>
+          <a class='nav-link text-capitalize text-white'href="{% url 'mainpage' %}">Mainpage</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link text-capitalize text-white'href="{% url 'homepage' %}">Home</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link text-capitalize text-white'href="{% url 'contactpage' %}">Contact</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link text-capitalize text-white'href="{% url 'servicepage' %}">Service</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link text-capitalize text-white'href="{% url 'feedbackpage' %}">Feedback</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link text-capitalize text-white'href="{% url 'gallerypage' %}">Gallery</a>
+        </li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <span class="btn btn-warning" >{{ request.user.username |capfirst }}</span>&nbsp; &nbsp;
+        <a class="btn btn-secondary" href="{% url 'logout'%}" class="text-primary">Logout</a>
+      </ul>
+    </nav>
+    <h1 class='text-capitalize text-center'>welcome to Narayana Tech House Institute</h1>
+   {% block nth %}
+
+   {% endblock %}
+    <footer class='footer b'>
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-md-3 text-center">
+           <h4 class='text-capitalize a'>about institute</h4>
+           <p class='font-weight-normal mt-3'>Mr.Narayana is a Python Trainer in Ameerpet, Corporate trainer with 13 years+ experience in technology.
+             He has worked on various technologies till now from which Python and Java and Data analytics being his forte.
+             He also provides training to leading tech industries and banks.
+             He has also been a part of various tech talks, discussions, and seminars.</p>
+         </div>
+         <div class="col-md-3 ">
+           <h4 class='text-capitalize a text-center'>our services</h4>
+           <ol class='text-left'>
+             <li>Machine Learning</li>
+             <li>Python Full Stack Web Development</li>
+             <li>Business Intelligence</li>
+             <li>MYSQL Server</li>
+             <li>Business and Management</li>
+             <li>linux</li>
+             <li>devOps</li>
+           </ol>
+         </div>
+         <div class="col-md-3 text-center">
+           <h4 class='text-capitalize a'>social media</h4>
+           <ul class='text-center navbar-nav'>
+             <li>
+               <div class="row text-center">
+                 <div class="offset-md-2 col-md-2 text-center">
+                   <i class="fab fa-whatsapp" style="font-size:30px;color:green;"></i>
+                 </div>
+                 <div class="col-md-8 text-left mt-2 pr-5">
+                   <h6>+91-9010607010</h6>
+                 </div>
+               </div>
+             </li>
+             <li>
+               <div class="row text-center">
+                 <div class="offset-md-2 col-md-2 text-center">
+                   <i class="fab fa-instagram mt-1" style="font-size:30px;color:white;background: linear-gradient(45deg, #833AB4, #FD1D1D, #F77737, #FCAF45);"></i>
+                 </div>
+                 <div class="col-md-8 text-left mt-2 pr-5">
+                   <h6>pythonnarayana</h6>
+                 </div>
+               </div>
+             </li>
+             <li>
+               <div class="row text-center">
+                 <div class="offset-md-2 col-md-2 text-center">
+                   <i class="fab fa-facebook mt-1" style="font-size:30px;color:#4267B2;"></i>
+                 </div>
+                 <div class="col-md-8 text-left mt-2 pr-5">
+                   <h6>narayana python</h6>
+                 </div>
+               </div>
+             </li>
+             <li>
+               <div class="row text-center">
+                 <div class="offset-md-2 col-md-2 text-center">
+                   <i class="fab fa-telegram mt-2" style="font-size:30px;color:#0077B5;"></i>
+                 </div>
+                 <div class="col-md-8 text-left mt-2 pr-5">
+                   <h6>NARAYANA TECH HOUSE</h6>
+                 </div>
+               </div>
+             </li>
+             <li>
+               <div class="row text-center">
+                 <div class="offset-md-2 col-md-2 text-center">
+                   <i class="fab fa-linkedin mt-2" style="font-size:30px;color:#0077B5;"></i>
+                 </div>
+                 <div class="col-md-8 text-left mt-2 pr-5">
+                   <h6>narayana tech house</h6>
+                 </div>
+               </div>
+             </li>
+           </ul>
+         </div>
+         <div class="col-md-3 text-center">
+           <h4 class='text-capitalize a'>pages</h4>
+           <ul class='navbar-nav'>
+             <li class='nav-item'>
+               <a class='nav-link text-capitalize'href="{% url 'homepage' %}">homepage</a>
+             </li>
+             <li class='nav-item'>
+               <a class='nav-link text-capitalize'href="{% url 'contactpage' %}">contactpage</a>
+             </li>
+             <li class='nav-item'>
+               <a class='nav-link text-capitalize'href="{% url 'servicepage' %}">servecepage</a>
+             </li>
+             <li class='nav-item'>
+               <a class='nav-link text-capitalize'href="{% url 'feedbackpage' %}">feedbackpage</a>
+             </li>
+             <li class='nav-item'>
+               <a class='nav-link text-capitalize'href="{% url 'gallerypage' %}">gallerypage</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+    </footer>
+    <a href="#top" class="btn btn-success">Go to top</a>
+    <a id="bottom"></a>
+  </body>
+</html>

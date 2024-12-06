@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block nth %}
+<title>Placement Students</title>
+<div class="container">
+  <div class="row">
+    <img src="{% static 'images/a.jpg' %}" width='300px' height='250px' class='float-left'>
+    <img src="{% static 'images/b.jpg' %}" width='300px' height='250px' class='mx-auto d-block'>
+    <img src="{% static 'images/c.jpg' %}" width='300px' height='250px' class='float-right'>
+  </div>
+  <div class="row mt-5">
+    <img src="{% static 'images/d.jpg' %}" width='300px' height='250px' class='float-left'>
+    <img src="{% static 'images/e.jpg' %}" width='300px' height='250px' class='mx-auto d-block'>
+    <img src="{% static 'images/f.jpg' %}" width='300px' height='250px' class='float-right'>
+  </div>
+  <div class="row mt-5">
+    <img src="{% static 'images/g.jpg' %}" width='300px' height='250px' class='float-left'>
+    <img src="{% static 'images/d.jpg' %}" width='300px' height='250px' class='mx-auto d-block'>
+    <img src="{% static 'images/d.jpg' %}" width='300px' height='250px' class='float-right'>
+  </div>
+  <div class="row mt-5">
+
+  </div>
+</div>
+{% endblock %}

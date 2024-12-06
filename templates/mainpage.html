@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    <title></title>
+  </head>
+  <style>
+  h1{
+    font-size: 100px;
+    margin-top: 150px;
+
+  }
+  h2{
+    font-size: 50px;
+    margin-top: 100px;
+  }
+
+  </style>
+  <body>
+    <h2 id="current"  color: royalblue; class="text-center mt-5 bg-primary"></h2>
+		<script>
+     let time = document.getElementById("current");
+     setInterval(() =>{
+	 let d = new Date();
+	 time.innerHTML = d.toLocaleTimeString();
+	 },1000)
+    </script>
+    <div class="text-right">
+      <a href="{% url 'login' %}" class="btn btn-success">Login</a>
+    </div>
+    <h1 class='text-center text-capitalize text-black' > <marquee class="marq"
+                 loop="">welcome to Narayana Tech House institute</h1>
+  </body>
+</html>
